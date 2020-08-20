@@ -12,16 +12,18 @@ html,body{
 }
 
 .container{
+    background-color: var(--main-color);
     width: 100%;
-    height: calc(100% - (160px + 30px));
+    min-height: 100%;
     max-width: 960px;
+    position: relative;
     margin: 0 auto;
 }
 header.cabecalho-principal{
-    background-color: var(--main-color);
     width: 100%;
-    height: 80px;
+    height: 100px;
     padding: 10px;
+
 }
 
 header.cabecalho-principal h1{
@@ -54,26 +56,54 @@ header.cabecalho-principal span{
 }
 
 main.conteudo-principal{
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--main-color);
     padding: 10px;
     height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.post-container{
+    width: 30%;
+    overflow: hidden;
+    max-height: 300px;
 }
 
 main.conteudo-principal h3.titulo-post {
+    color: var(--white-color);
+    border-bottom: 2px solid darkgoldenrod;
+    font-size: 30px;
+    height: 50px;
+    overflow: hidden;
     padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+main.conteudo-principal h3.titulo-post:after{
+    content:'...';
 }
 
 main.conteudo-principal h3.titulo-post a{
+
+    font-size: 20px;
+    text-align: left;
     text-decoration: none;
+    margin: 2px 0px;
     color: var(--white-color);
 }
 main.conteudo-principal p.conteudo-post{
     color: var(--white-color);
+    height: 100%;
+    margin-bottom: 10px;
 }
 
 
 footer.roda-pe{
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    color: var(--white-color);
     height: 80px;
     display: flex;
     align-items: center;

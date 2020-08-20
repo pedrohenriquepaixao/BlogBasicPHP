@@ -33,13 +33,13 @@ $posts = $postsBlog->getPostById($id);
         </ul>
     </nav>
     <main class="conteudo-principal">
-            <div class="post-container">
 
-                <h3 class="titulo-post"><a href="#"><?php echo $posts["titulo"]; ?></a></h3>
+
+                <h3 class="titulo-post"><?php echo $posts["titulo"]; ?></h3>
                 <p class="conteudo-post">
-                    <?php echo $posts['conteudo']; ?>
+                    <?php echo nl2br($posts['conteudo']); ?>
                 </p>
-            </div>
+
 
     </main>
     <footer class="roda-pe">

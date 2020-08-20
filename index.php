@@ -40,9 +40,12 @@ $posts = $postsBlog->showPosts();
             <div class="post-container">
 
                 <h3 class="titulo-post"><a href="postagem.php?id=<?php echo $post['id']; ?>"><?php echo $post["titulo"]; ?></a></h3>
-                <p class="conteudo-post">
-                    <?php echo $post["conteudo"]; ?></a>
+                <p class="conteudo-post"><?php echo $post["conteudo"];?></p>
+                 <a style="text-decoration: none;color:var(--white-color);" href="postagem.php?id=<?php echo $post['id']; ?>">LEIA MAIS...</a>
+                <p id="leiamais">
+
                 </p>
+
             </div>
             <?php endforeach; ?>
         </main>
@@ -50,6 +53,23 @@ $posts = $postsBlog->showPosts();
             <p>TODOS OS DIREITOS RESERVADOS À ALGUÉM.</p>
         </footer>
     </div>
+<script>
+    executar();
 
+    function executar(){
+
+        var conteudoPost = document.querySelectorAll('.conteudo-post');
+
+        for(i=0;i < conteudoPost.length; i++){
+
+            var contagemCaracteres = conteudoPost[i].innerText.split(' ',30);
+
+            conteudoPost[i].innerText = contagemCaracteres.join(" ");
+
+        }
+
+    }
+
+</script>
 </body>
 </html>
