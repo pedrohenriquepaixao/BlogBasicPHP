@@ -1,0 +1,7 @@
+---
+repo: https://github.com/pedrohenriquepaixao/BlogBasicPHP
+image: https://previews.dropbox.com/p/thumb/AA8Fsz4OPKLqkPogp0siSfciJWJY04q8jyM9Y_lZbyf1xHX_-tpndR7XXA_DImtwQx5BwnJxxglYYFRrBMV5hywUg05OZH7d2Y5k60V4gaNyse6a9YDFd8krLfapCsn0vOWCCjfOqrOrbcUyF69A8FDURP-L_WHiYZ3Dp_8wLX1ExsP08rYCNFHgm-78cQAtPf8K9xHw8wUFvR9z8vLCaON3ZmnSVtHjUffu2iQZ8XWGfrPShJJKYfsUI0oBLP-V3COFf_fhkN5zqDnUwQVFV93sSuaX3yNQsoWO8dLEOpd4Mzbso0fwuo2J4qMQYmCHnijBShhtxSIG5LtAW50YaANKRWe2n7TIAJxW-Uw67okePA/p.png?fv_content=true&size_mode=5
+description: "Blog feio criado em php"
+principal_language: PHP
+
+---
